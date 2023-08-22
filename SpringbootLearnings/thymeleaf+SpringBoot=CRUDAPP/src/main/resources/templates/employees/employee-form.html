@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Save Employee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .h4 {
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column; /* Changed to vertical layout */
+            align-items: center; /* Center align form elements */
+        }
+
+        /* Updated input field styles */
+        input[type="text"] {
+            width: 100%; /* Full-width input fields */
+            max-width: 400px; /* Set a maximum width for better readability */
+            padding: 12px;
+            margin: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        button[type="submit"] {
+            width: 100%; /* Full-width button */
+            max-width: 400px; /* Set a maximum width for better readability */
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        button[type="submit"]:active {
+            background-color: #003d80;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h3>Employee Directory</h3>
+    <hr>
+
+    <div class="mb-4 text-center">
+        <h4>Save Employee</h4>
+    </div>
+
+    <form action="#" th:action="@{/employees/save}"
+          th:object="${employee}" method="POST">
+
+        <!-- Add hidden form field to handle update -->
+        <input type="hidden" th:field="*{id}" />
+
+        <input type="text" th:field="*{firstName}"
+               class="form-control" placeholder="First name">
+
+        <input type="text" th:field="*{lastName}"
+               class="form-control" placeholder="Last name">
+
+        <input type="text" th:field="*{email}"
+               class="form-control" placeholder="Email">
+
+        <button type="submit" class="btn btn-info">Save</button>
+
+    </form>
+
+    <hr>
+    <div class="text-center">
+        <a th:href="@{/employees/list}">Back to Employees List</a>
+    </div>
+
+</div>
+</body>
+
+</html>

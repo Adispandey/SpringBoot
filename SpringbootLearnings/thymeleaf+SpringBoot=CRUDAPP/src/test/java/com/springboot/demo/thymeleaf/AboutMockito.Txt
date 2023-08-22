@@ -1,0 +1,37 @@
+When testing CRUD operations with JUnit and Mockito, we typically use an in-memory database or mock the repository
+(using Mockito) to simulate the database interactions without actually hitting a real database. This way, we can
+isolate the tests and avoid any external dependencies like a live database or network connection.
+
+In-Memory Database Approach:
+Using an in-memory database, such as H2 or HSQLDB, allows us to set up a lightweight database during the test phase
+,which is discarded after the tests are completed. The in-memory database provides a real database environment for
+testing, but it does not persist data beyond the test scope.
+
+Mocking the Repository:
+Mocking the repository (using Mockito) involves creating a mock object of the repository interface and defining its
+behavior during testing. This approach allows us to control the data that is returned by the repository methods and
+avoids actual database interactions.
+
+In both cases, we can define the behavior of the repository methods to return specific data for the test cases.
+For example, in the case of the EmployeeRepository, we can mock the findAll, findById, save, and deleteById methods
+and return specific data or simulate behavior as needed.
+
+Summary of how these approaches work:
+
+1. In-Memory Database Approach:
+
+Set up an in-memory database (e.g., H2) in the test configuration.
+Load the database with test data (if needed) before running the tests.
+Execute the CRUD operations on the in-memory database through the actual repository interface.
+Verify the results and perform assertions on the data retrieved from the in-memory database.
+2. Mocking the Repository Approach:
+
+Create a mock of the EmployeeRepository using Mockito.
+Define the behavior of the mocked repository methods (e.g., findAll, findById, save, and deleteById) using
+Mockito.when(...).thenReturn(...) or other relevant methods.
+Perform the CRUD operations on the mocked repository.
+Verify that the repository methods are called with the expected parameters.
+Verify the results and perform assertions on the data returned by the mocked repository.
+Both approaches allow us to test the CRUD operations and other logic in the service and controller layers without
+the need for a real database, making the tests faster, more reliable, and isolated from external dependencies.
+It's important to choose the approach that suits your testing needs and requirements.

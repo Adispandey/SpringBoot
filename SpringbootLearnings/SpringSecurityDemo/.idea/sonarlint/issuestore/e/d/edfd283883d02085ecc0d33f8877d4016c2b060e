@@ -1,0 +1,20 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(»ä÷®8­‘¿²˜1
+X	java:S1252"<This block of commented-out lines of code should be removed.(·éé8±‘¿²˜1
+X	java:S125D"<This block of commented-out lines of code should be removed.(ÊÆıÉ8±‘¿²˜1
+]	java:S125J"<This block of commented-out lines of code should be removed.(¬ùØ³øÿÿÿÿ8²‘¿²˜1
+]	java:S125Z"<This block of commented-out lines of code should be removed.(ğä‰¼şÿÿÿÿ8²‘¿²˜1
+X	java:S125b"<This block of commented-out lines of code should be removed.(óú×›8Ê³¿²˜1
+c
+java:S1128"FRemove this unused import 'com.mchange.v2.c3p0.ComboPooledDataSource'.(‹à²Á8´‘¿²˜1
+o
+java:S1128"RRemove this unused import 'org.springframework.context.annotation.PropertySource'.(™¢˜é8´‘¿²˜1
+—
+java:S1128
+"zRemove this unused import 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter'.(š©À8µ‘¿²˜1
+S
+java:S1128"1Remove this unused import 'javax.sql.DataSource'.(ÉòÂ¿úÿÿÿÿ8µ‘¿²˜1
+_
+java:S1128"=Remove this unused import 'java.beans.PropertyVetoException'.(ƒÂ¡îùÿÿÿÿ8µ‘¿²˜1
+R
+java:S1128"5Remove this unused import 'java.util.logging.Logger'.(ƒ¥óš8µ‘¿²˜1

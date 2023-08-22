@@ -1,0 +1,13 @@
+
+k
+java:S1192""IDefine a constant instead of duplicating this literal "Employee" 4 times.(ãİàúÿÿÿÿÿ8ö„Ô²˜1
+X	java:S125"<This block of commented-out lines of code should be removed.(Ûÿ¯ä8¸Ã¸²˜1
+X	java:S125"<This block of commented-out lines of code should be removed.(é«®Ğ8æ§¹²˜1
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8‰”º²˜1
+˜
+java:S1128"vRemove this unused import 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration'.(Æ­¹¬øÿÿÿÿ8î§¹²˜1
+h
+java:S1128"FRemove this unused import 'org.springframework.stereotype.Controller'.(øŠ—Öùÿÿÿÿ8ï§¹²˜1
+S
+java:S1128"1Remove this unused import 'javax.sql.DataSource'.(ÉòÂ¿úÿÿÿÿ8ï§¹²˜1
